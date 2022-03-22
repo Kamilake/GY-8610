@@ -1,0 +1,3 @@
+kikit panelize -p :jlcTooling --layout "grid; rows: 5; cols: 10;" --source "tolerance: 1000mm" --tabs full --cuts vcuts ./GY-8610.kicad_pcb GY-8610_panel.kicad_pcb
+
+kikit fab jlcpcb --assembly --schematic ./GY-8610.kicad_sch --ignore J1 --no-drc ./GY-8610_panel.kicad_pcb ./fab
